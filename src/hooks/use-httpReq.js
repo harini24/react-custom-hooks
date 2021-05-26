@@ -27,5 +27,10 @@ const useHttpRequest = (requestConfig,applyData) => {
         setIsLoading(false);
     };
 
+    return {
+        isLoading:isLoading,
+        error:error, 
+        sendReq:sendReq
+    }
 }
 export default useHttpRequest
